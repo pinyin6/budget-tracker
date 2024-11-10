@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>budget tracker</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=delete" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+
+</head><style>
+    body {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+</style>
+<body class="bg-slate-950">
+    <main  class="">
+
+        <div class="text-4xl  uppercase flex justify-center items-center text-rose-400 bg-slate-950">
+<h1 class="font-bold font-serif underline">budget tracker</h1>
+        </div>
+<section   class="bg-orange-700   flex flex-row grid-rows-2   justify-around">
+    <div class="parent w-1/2 bg-slate-950 items-center justify-center space-y-4 py-4 flex-col flex">
+        
+    
+        <form class="space-y-4 flex flex-col items-center">
+            
+                <input type="text" placeholder="input Source....." class="cost_input p-2 border-2    uppercase  w-full border-red-600 rounded-xl text-center   px-32  font-bold  bg-rose-500" />
+            
+            
+                <input type="text" placeholder="Amount" class="cost_input p-2 border-2 uppercase   border-red-600  text-white  rounded-xl text-center bg-slate-950 w-60"  />
+            
+            
+                <button      type="submit" id="amount_btn" class="bg-red-500     uppercase  w-60 text-center text-white py-2 px-4   hover:bg-pink-600 ml-2 rounded-xl">
+                    Add Transaction
+                </button>
+        
+        </form>
+    </div>
+    <div class="parent2  bg-slate-950 flex-col space-y-4 w-1/2">
+    
+        <h2 class="text-2xl  flex justify-center  uppercase text-rose-400 font-bold">stats</h2>
+        <div class="bg-rose-200    hover:bg-rose-600    hover:font-bold  hover:border-0  cursor-pointer   items-center justify-center flex m-auto border-r-8 border-r-yellow-500 w-1/2 p-2    uppercase   rounded-xl">
+            <span>balance: $1500</span> 
+        </div>
+        <div class="bg-green-100   hover:bg-green-500    hover:font-bold   hover:border-0  cursor-pointer  items-center justify-center flex m-auto border-r-8 border-r-green-600 w-1/2 p-2   uppercase  rounded-xl">
+            <span>income: $1500</span>
+        </div>
+        <div class="bg-red-200    hover:bg-red-600        hover:font-bold    hover:border-0 cursor-pointer  items-center  justify-center flex m-auto border-r-8 border-r-red-600 w-1/2 p-2   uppercase rounded-xl">
+            <span>income: $1500</span>   
+        </div>
+        
+
+    </div>
+
+</section>
+<!-- <div><h3 class="text-3xl underline uppercase flex justify-center   font-bold items-center">Transaction history</h3> </div> -->
+<section class="flex flex-row  justify-center items-center ">
+ 
+    <div class="bg-slate-950    h-1/2 space-y-6 w-1/2 flex flex-col justify-center items-center overflow-y-auto py-10">
+          <h4 class="text-2xl  uppercase flex justify-center items-center  text-rose-400 font-bold">income</h4>
+        <div class="w-1/2 ">
+          
+            <div class="p-2 border-l-green-600 border-l-8 bg-rose-400     cursor-pointer   hover:bg-rose-700 hover:font-bold   hover:border-0 relative rounded-xl">
+                <div class=" h-auto  relative">
+                    <div class="justify-center flex-col flex">
+                        <span class="text-2xl uppercase">freelancing</span>
+                        <span>5:49:52 AM 5/19/2022</span>
+                    </div>
+                    <div class="flex  w-10 absolute ml-60 mt-4 mr-2 justify-center items-center  top-0 ">
+                        <span class="">$500</span>
+                    </div>
+                </div>
+    
+                <svg class="absolute   items-center flex ml-72  mt-5  top-0" xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="36px" fill="#e8eaed">
+                    <path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/>
+                </svg> 
+               
+            </div>
+        </div>
+        <div class="w-1/2"> 
+        <div class="p-2 border-l-green-600 border-l-8 bg-neutral-500 hover:bg-neutral-800 hover:font-bold      hover:text-white hover:border-0   cursor-pointer relative rounded-xl">
+            <div class=" h-auto  relative"> 
+                <div class="justify-center flex-col flex">
+                    <span class="text-2xl uppercase">marketing</span>
+                    <span>5:49:52 AM 5/19/2022</span>
+                </div>
+                <div class="flex  w-10 absolute ml-60 mt-4 justify-center items-center  top-0 ">
+                    <span class="">$500</span>
+                </div>
+            </div>
+
+            <svg class="absolute   items-center flex ml-72 mt-5  top-0" xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="36px" fill="#e8eaed">
+                <path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/>
+            </svg> 
+           
+        </div>
+    </div>
+    <div class="w-1/2">
+        <div class="p-2 border-l-green-600 border-l-8 bg-red-300 cursor-pointer   hover:border-0  hover:bg-red-700 hover:font-bold relative rounded-xl">
+            <div class=" h-auto  relative">
+                <div class="justify-center flex-col flex">
+                    <span class="text-2xl uppercase">dropshipping</span>
+                    <span>5:49:52 AM 5/19/2022</span>
+                </div>
+                <div class="flex  w-10 absolute ml-60 mt-4 justify-center items-center  top-0 ">
+                    <span class="">$500</span>
+                </div>
+            </div>
+
+            <svg class="absolute   items-center flex ml-72 mt-5  top-0" xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="36px" fill="#e8eaed">
+                <path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/>
+            </svg> 
+           
+        </div>
+    </div>
+
+</div>
+        
+
+    </div>
+</div>
+</div>
+
+
+
+    <div class="parent 3 w-1/2 flex flex-col text-center bg-slate-950 justify-center items-center space-y-6 overflow-y-auto py-10">
+    <h4 class="uppercase  text-2xl text-rose-400  font-bold">Expenses</h4>
+   
+    <div class="w-1/2 ">
+     
+        <div class="p-2 border-r-red-700 border-r-8 bg-slate-400   hover:bg-slate-800 hover:text-white  hover:border-0 hover:font-bold cursor-pointer relative rounded-xl">
+            <div class=" h-auto  relative">
+                <div class="justify-center flex-col   items-end flex">
+                    <span class="text-2xl uppercase">gaming</span>
+                    <span>5:49:52 AM 5/19/2022</span>
+                </div>
+                <div class="flex  w-10 absolute ml-10 mt-4 justify-center items-center  top-0 ">
+                    <span class="">$500</span>
+                </div>
+            </div>
+
+            <svg class="absolute   items-center flex ml-0 mt-5  top-0" xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="36px" fill="#e8eaed">
+                <path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/>
+            </svg> 
+           
+        </div>
+    </div>
+    <div class="w-1/2">
+        <div class="p-2 border-r-red-700 border-r-8 bg-red-300  hover:bg-red-600 hover:font-bold cursor-pointer  hover:border-0  relative rounded-xl">
+            <div class=" h-auto  relative">
+                <div class="justify-center  items-end  flex-col flex">
+                    <span class="text-2xl uppercase">jordans</span>
+                    <span>5:49:52 AM 5/19/2022</span>
+                </div>
+                <div class="flex  w-10 absolute ml-10 mt-4 justify-center items-center  top-0 ">
+                    <span class="">$500</span>
+                </div>
+            </div>
+
+            <svg class="absolute   items-center flex ml-0 mt-5  top-0" xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="36px" fill="#e8eaed">
+                <path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/>
+            </svg> 
+           
+        </div>
+</div>
+<div class="w-1/2">
+    <div class="p-2 border-r-red-700 border-r-8 bg-cyan-300   hover:bg-cyan-600 hover:font-bold relative rounded-xl hover:border-0 cursor-pointer">
+        <div class=" h-auto  relative">
+            <div class="justify-center items-end flex-col flex">
+                <span class="text-2xl uppercase">studio</span>
+                <span>5:49:52 AM 5/19/2022</span>
+            </div>
+            <div class="flex  w-10 absolute ml-10 mt-4 justify-center items-center  top-0 ">
+                <span class="">$500</span>
+            </div>
+        </div>
+
+        <svg class="absolute   items-center flex ml-0 mt-5  top-0" xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="36px" fill="#e8eaed">
+            <path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/>
+        </svg> 
+       
+    </div>
+
+</div>
+</div>
+</section>
+
+
+    </main>
+    
+</body>
+</html> 
